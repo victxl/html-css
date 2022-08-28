@@ -28,4 +28,10 @@ fieldset{
 p#botao{
     text-align: right;
     padding-right: 10px;
+    
+}
+
+input{
+    margin-top: 2px;
+  
 }

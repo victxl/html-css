@@ -11,7 +11,19 @@
     <h2>Exemplo de Formulario</h2>
     <form action="cadastro.php">
         <fieldset>
-
+            <div>
+                <label for="idn1">N1:</label>
+                <input type="number" name="n1" id="idn1"min="0" max="50" required oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)"> 
+               
+            </div>
+            <div>
+                <label for="idn2">N2:</label>
+                <input type="number" name="n1" id="idn1" min="1" max="50" required>
+            </div>
+            <div>
+                <label for="idsoma">Soma:</label>
+                <output id="idsoma">0</output>
+            </div>
         </fieldset>
         <p id="botao">
             <input type="submit" value="Salvar">
