@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Exemplo de Formulario</h2>
+    <form action="cadastro.php">
+        <fieldset>
+            <p>
+                <label for="idn1">N1:</label>
+                <input type="number" name="n1" id="idn1"min="0" max="50" required oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)"> 
+               
+            </p>
+            <p>
+                <label for="idn2">N2:</label>
+                <input type="number" name="n1" id="idn1" min="1" max="50" required
+                oninput="idsoma.innerHTML = Number(idn1.value) + Number(idn2.value)">
+            </p>
+            <p>
+                <label for="idsoma">Soma:</label>
+                <output nome="soma" id="idsoma">0</output>
+            </p>
+        </fieldset>
+        <p id="botao">
+            <input type="submit" value="Salvar">
+            <input type="reset" value="Cancelar">
+        </p>
+        
+    </form>
+
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinânica</H1>
+    <p>Tente abrir essa site em varios dispositivos diferentes ou simplesmente aumente e dimiua o tamanho do seu navagador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1200px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML4.</p>
+    <audio preload="auto" autoplay controls loop>
+        <source src="midia/March of the Hares - Nathan Moore.mp3" type="audio/mpeg">
+        <source src="midia/March of the Hares - Nathan Moore.mp3" type="audio/ogg">
+        <source src="midia/March of the Hares - Nathan Moore.mp3" type="audio/waw">
+        <p>Infelizmente sue navegador não soncegue reproduzir audio. <a href="midia/March of the Hares - Nathan Moore.mp3">click aqui para vaixar o arquivo MP3</a></p>
+    </audio>
+    
+</body>
+</html>
